@@ -1,0 +1,36 @@
+{
+  "name": "theater-app",
+  "version": "0.0.1",
+  "description": "Theater ticketing system",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "start": "node index.js",
+    "test": "lab -c -r console -o stdout -r lcov -o lcov.info"
+  },
+  "author": "Sandeep",
+  "license": "",
+  "dependencies": {
+    "@hapi/boom": "9.1.3",
+    "@hapi/hapi": "20.1.5",
+    "@hapi/inert": "6.0.3",
+    "@hapi/vision": "6.1.0",
+    "config": "3.3.6",
+    "hapi-pino": "8.3.0",
+    "hapi-swagger": "14.0.0",
+    "joi": "17.4.1",
+    "logrotator": "1.1.0",
+    "moment": "2.29.1",
+    "mongoose": "5.13.4",
+    "pino": "6.2.1",
+    "ramda": "0.27.1"
+  },
+  "devDependencies": {
+    "@hapi/code": "8.0.2",
+    "@hapi/lab": "23.0.0",
+    "blipp": "4.0.1",
+    "codeclimate-test-reporter": "0.5.1",
+    "jest": "^27.0.6",
+    "standard": "14.3.4"
+  }
+}
