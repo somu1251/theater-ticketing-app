@@ -69,3 +69,11 @@ configure about token in swagger documentation and run APIs
 
 if you run above command lcov.info test report file will be generated
 
+## Run using docker
+
+ - Run
+ 
+> \> docker-compose up
+
+ - APIs are accessible via http://localhost:3000/app/explorer
+

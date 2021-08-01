@@ -2,18 +2,22 @@ version: '3'
 
 services:
   mongo:
+    container_name: mongo
     image: mongo
     volumes:
       - mongodb:/data/db
     ports:
       - 27017:27017
 
-  theater_app:
+  app:
+    container_name: theater_app
     build: ./
     ports:
       - 3000:3000
     volumes:
       - ./:/app
+    links:
+      - mongo
     depends_on:
       - mongo
 
